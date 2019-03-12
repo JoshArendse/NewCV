@@ -1,0 +1,145 @@
+/* general layout and behavior//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+/* opening section//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.banner{
+    padding-top: 1%;
+    background-color: rgb(230, 230, 230);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.images{
+    background-image: url(../img/avatar.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 180px;
+    background-position-x: 15%;
+    transition: all 200ms ease-in-out;
+}
+.images:hover{
+    background-image: url(../img/smile.png);
+    transition: all 200ms ease-in-out;
+}
+
+#arrow{
+    padding-top: 5%;
+    width: 100px;
+}
+
+.opening{
+    font-family: 'Courgette';
+    font-size: 36px;
+}
+
+.heading1{
+    font-family: 'Cinzel';
+    font-size: 48px;
+}
+
+/* about section////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.about-cont{
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.about{
+    text-align: left;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 200px;
+    grid-gap: 20px;
+}
+
+.hobbies{
+    margin: 0 auto;
+    width: 200px;
+}
+
+/* image styling////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.background{
+    text-align: center;
+    border: 2px solid #44444400;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 10px 1px #444444;
+}
+
+.hobbies > .background1{
+    text-align: center;
+    background-color: #e61c1c;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.hobbies > .background2{
+    text-align: center;
+    background-color: #40e748;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.hobbies > .background3{
+    text-align: center;
+    background-color: #7b17ee;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#camera, #brush, #music{
+    text-align: center;
+    padding-top: 20px;
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+}
+
+
+/* text styling/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.interests{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #444444;
+}
+
+p{
+    font-size: 16px;
+    color: #444444;
+    font-family: 'Montserrat';
+    opacity: 0.8;
+}
+
+h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #444444;
+}
+
+
+
