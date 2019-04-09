@@ -1,4 +1,4 @@
-/* general layout and behavior//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* general layout and behavior/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 html{
     scroll-behavior: smooth;
@@ -6,22 +6,23 @@ html{
 
 body{
     margin: 0 auto;
+    padding: 0.01%;
 }
 
 .container{
     margin: 0 auto;
+    padding: 0.01%;
+    max-width: 1920px;
 }
 
-/* opening section//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* opening section/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .banner{
     padding-top: 1%;
     background-color: rgb(230, 230, 230);
-    background-repeat: no-repeat;
     margin: 0 auto;
     text-align: center;
-    background-attachment: fixed;
-    background-size: cover;
+    box-shadow: 0px +5px +10px 0px #44444450;
 }
 .images{
     background-image: url(../img/avatar.png);
@@ -51,72 +52,174 @@ body{
     font-size: 48px;
 }
 
-/* about section////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* about section///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.about-cont{
+.about-container{
     margin: 0 auto;
     padding: 2%;
     text-align: center;
+    max-width: 100%;
+    border-bottom: 1px solid #44444400;
 }
 
 .about{
-    text-align: left;
     margin: 0 auto;
+    padding: 1%;
+    max-width: 80%;
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 200px;
-    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
 }
 
 .hobbies{
     margin: 0 auto;
+    padding: 1%;
+    padding-top: 10px;
     width: 200px;
+    border-radius: 5px;
+    border: 0px solid black;
 }
 
-/* image styling////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* image styling///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.background{
+.background0{
     text-align: center;
-    border: 2px solid #44444400;
+    border-bottom: 1px solid #444444;
     width: 200px;
+    border-radius: 10px;
     height: 200px;
-    box-shadow: 0px 0px 10px 1px #444444;
 }
 
-.hobbies > .background1{
+.hobbies > div > img{
+    margin: 0 auto;
     text-align: center;
+    width: 160px;
+    height: 150px;
+}
+
+/* projects section////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.projects-container{
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+    max-width: 100%;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "projects1 projects2" "projects3 projects4" "projects5 projects6" "projects7 projects8" ;  
+}
+
+#projects1{
+    grid-area: projects1;
+}
+#projects2{
+    grid-area: projects2;
+}
+#projects3{
+    grid-area: projects3;
+}
+#projects4{
+    grid-area: projects4;
+}
+#projects5{
+    grid-area: projects5;
+}
+#projects6{
+    grid-area: projects6;
+}
+#projects7{
+    grid-area: projects7;
+}
+#projects8{
+    grid-area: projects8;
+}
+
+.projects-grid > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* section for work and experience/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.work-container{
+    margin: 0 auto;
+    padding: 1%;
+    padding-top: 4%;
+    background-image: url();
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.work-grid{
+    margin: 0 auto;
+    padding-right: 5%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 70%;
+}
+
+.exp-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 3fr;
+    max-width: 100%;
+    grid-template-rows: auto auto;
+}
+
+/* general work grid styles////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.exp-grid > div > img {
+    width: 150px;
+}
+
+.experience1{
+    background-color: white;
+}
+.experience2{
+    background-color: white;
+}
+.experience2 > img{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.education{
+    grid-row-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    padding-right: 10%;
+}
+
+/* text styling////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+input[type=submit] {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: aliceblue;
     background-color: #e61c1c;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    border: 2px solid #e61c1c;
+    width: 85px;
+    border-radius: 50px;
 }
-
-.hobbies > .background2{
-    text-align: center;
-    background-color: #40e748;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+input[type=submit]:hover{
+    background-color: aliceblue;
+    color: #e61c1c;
+    border: 2px solid #e61c1c;
 }
-
-.hobbies > .background3{
-    text-align: center;
-    background-color: #7b17ee;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+input[type=submit]:active{
+    font-size: 17px;
+    width: 80px;
 }
-
-#camera, #brush, #music{
-    text-align: center;
-    padding-top: 20px;
-    width: 60px;
-    height: 60px;
-    filter: invert(100%);
-}
-
-
-/* text styling/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .interests{
     font-size: 20px;
@@ -133,9 +236,16 @@ p{
 }
 
 h2{
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #444444;
+}
+
+h3{
+    font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 600;
     color: #444444;

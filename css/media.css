@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+
+    .about{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 50px;
+        padding-bottom: 5%;
+        grid-template-areas: "projects1" "projects2" "projects4" "projects3" "projects5" "projects6" "projects8" "projects7";
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies{
+        box-shadow: 0px 0px 20px 2px #44444450;
+    }
+
+}
