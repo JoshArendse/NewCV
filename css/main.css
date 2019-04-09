@@ -6,6 +6,7 @@ html{
 
 body{
     margin: 0 auto;
+    scroll-behavior: smooth;
     padding: 0.01%;
 }
 
@@ -33,7 +34,7 @@ body{
     transition: all 200ms ease-in-out;
 }
 .images:hover{
-    background-image: url(../img/smile.png);
+    background-image: url(../img/avatar2.png);
     transition: all 200ms ease-in-out;
 }
 
@@ -148,10 +149,8 @@ body{
 
 .work-container{
     margin: 0 auto;
-    padding: 1%;
     padding-top: 4%;
-    background-image: url();
-    background-size: contain;
+    background-image: url(../img/tie.jpg);
     background-attachment: fixed;
 }
 
@@ -180,12 +179,10 @@ body{
     width: 150px;
 }
 
-.experience1{
+.experience1, .experience2{
     background-color: white;
 }
-.experience2{
-    background-color: white;
-}
+
 .experience2 > img{
     padding-left: 10%;
     padding-top: 10%;
@@ -233,6 +230,10 @@ p{
     color: #444444;
     font-family: 'Montserrat';
     opacity: 0.8;
+}
+
+ul{
+    list-style-image: url(../icon/brush.svg);
 }
 
 h2{
