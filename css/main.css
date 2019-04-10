@@ -183,14 +183,18 @@ body{
     background-color: white;
 }
 
+.experience1 > img{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
 .experience2 > img{
     padding-left: 10%;
     padding-top: 10%;
 }
 
 .education{
-    grid-row-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
     background-color: white;
     padding-right: 10%;
 }
@@ -211,7 +215,7 @@ input[type=submit] {
 input[type=submit]:hover{
     background-color: aliceblue;
     color: #e61c1c;
-    border: 2px solid #e61c1c;
+    border: 1px solid #e61c1c;
 }
 input[type=submit]:active{
     font-size: 17px;
@@ -236,8 +240,16 @@ ul{
     list-style-image: url(../icon/brush.svg);
 }
 
+ul > li > p{
+    font-size: 14px;
+}
+
+.experience1 > p, .experience2 > p{
+    font-size: 14px;
+}
+
 h2{
-    padding-top: 30px;
+    padding-top: 3%;
     text-align: center;
     font-size: 24px;
     font-family: 'Montserrat';

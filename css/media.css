@@ -1,4 +1,6 @@
-@media (max-width: 900px) {
+/* inserted queries for tablet/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 960px) {
 
     .about{
         grid-template-columns: 1fr 1fr;
@@ -13,16 +15,37 @@
         grid-template-areas: "projects1" "projects2" "projects4" "projects3" "projects5" "projects6" "projects8" "projects7";
     }
 
+    .work-grid{
+        grid-template-columns: 1fr;
+        max-width: 80%;
+        padding-right: none;
+        padding-bottom: 5%;
+    }
+    .exp-grid {
+        max-width: 100%;
+        grid-template-rows: auto;
+    }
+    .education{
+        grid-column-start: 1;
+    }
+    
+
 }
+
+/* inserted queries for mobile/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (max-width: 540px) {
 
     .about{
         grid-template-columns: 1fr;
+        max-width: 100%;
     }
 
     .hobbies{
         box-shadow: 0px 0px 20px 2px #44444450;
     }
 
+    .exp-grid > div > img {
+        width: 100px;
+    }
 }
