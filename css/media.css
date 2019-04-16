@@ -40,6 +40,16 @@
     .skills-grid-container{
         grid-template-columns: auto;
     }
+    footer{
+        grid-template-columns: 1fr 1fr; 
+        text-align: center;
+    }
+    .footer3{
+        padding-left: 40%;
+    }
+    article, article > a{
+        text-align: center;
+    }
 
 }
 
@@ -59,5 +69,13 @@
 
     .exp-grid > div > img {
         width: 100px;
+    }
+
+    footer{
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+    .footer3{
+        padding-left: 0%;
     }
 }

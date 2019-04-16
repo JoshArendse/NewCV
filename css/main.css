@@ -96,6 +96,7 @@ body{
     text-align: center;
     width: 160px;
     height: 150px;
+    border-radius: 10px;
 }
 
 /* projects section////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -152,6 +153,7 @@ body{
     padding-top: 4%;
     background-image: url(../img/tie.jpg);
     background-attachment: fixed;
+    border-radius: 20px;
 }
 
 .work-grid{
@@ -281,11 +283,41 @@ body{
 #PHP{
     background-color: rgb(138, 140, 255);
 }
-#SASS{
+#MYSQL{
     background-color: rgb(238, 238, 238);
 }
 #GITHUB{
     background-color: rgb(81, 202, 81);
+}
+
+/* footer styling///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.footer-container{
+    padding-top: 5%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid #e61c1c;
+}
+
+footer{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 75%;
+    text-align: left;
+}
+
+.footer1{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 19px; 
+    text-align: center;
+}
+.footer1 > img{
+    width: 200px;
+    border-radius: 10px;
+    filter: grayscale(100%);
 }
 
 /* text styling////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -351,6 +383,20 @@ h3{
     font-family: 'Montserrat';
     font-weight: 600;
     color: #444444;
+}
+
+article, article > a{
+    color: #666666;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.9;
+    text-align: left;
+}
+
+article > a:hover{
+    color: #e61c1c;
 }
 
 
