@@ -28,9 +28,21 @@
     .education{
         grid-column-start: 1;
     }
+
+    .skills-grid-container{
+        grid-template-columns: auto auto;
+    }
     
+}
+
+@media (max-width: 640px) {
+
+    .skills-grid-container{
+        grid-template-columns: auto;
+    }
 
 }
+
 
 /* inserted queries for mobile/////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
