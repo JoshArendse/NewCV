@@ -112,8 +112,8 @@ body{
 .projects-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "projects1 projects2" "projects3 projects4" "projects5 projects6" "projects7 projects8" ;  
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "projects1 projects2" "projects3 projects4" "projects5 projects6" "projects7 projects8" "projects9 projects10";  
 }
 
 #projects1{
@@ -139,6 +139,12 @@ body{
 }
 #projects8{
     grid-area: projects8;
+}
+#projects9{
+    grid-area: projects9;
+}
+#projects10{
+    grid-area: projects10;
 }
 
 .projects-grid > div > img{
